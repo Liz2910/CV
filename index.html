@@ -48,19 +48,20 @@
     <main>
         <section id="hero" class="hero-section hidden-el">
             <div class="hero-content">
-                <span class="greeting">Hola mundo, soy</span>
-                <h1>Lizeth Crisosto</h1>
-                <p class="subtitle">Desarrolladora Full Stack & UI Enthusiast</p>
+                <span class="greeting">Hola, soy</span>
+                <h1>Lizeth Margarita<br>Crisosto Garcia</h1>
+                <p class="subtitle">Estudiante de Ingeniería en Computación & AI Enthusiast</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Trabajo <i class="las la-arrow-right"></i></a>
-                    <a href="#" class="btn btn-secondary">Descargar CV <i class="las la-download"></i></a>
+                    <a href="#contact" class="btn btn-primary">Contáctame <i class="las la-paper-plane"></i></a>
+                    <a href="#about" class="btn btn-secondary">Ver Más <i class="las la-arrow-down"></i></a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="code-badge">
                     <pre><code>const lizeth = {
-  passion: "code",
-  dream: "big"
+  age: 18,
+  passion: "AI",
+  skills: ["Leadership", "Order"]
 };</code></pre>
                 </div>
                 <div class="circle-decoration"></div>
@@ -70,13 +71,27 @@
         <section id="about" class="section hidden-el">
             <div class="container">
                 <div class="section-header">
-                    <h2>Sobre Mí</h2>
-                    <p>Creando puentes entre diseño y código</p>
+                    <h2>Perfil</h2>
+                    <p>Sobre mí</p>
                 </div>
                 <div class="about-content glass-card">
-                    <p>Soy una programadora apasionada por crear experiencias digitales que impacten. Transformo ideas
-                        complejas en código limpio y elegante. Mi enfoque combina la precisión técnica con una estética
-                        moderna y funcional.</p>
+                    <p>Tengo 18 años. Me gustaría especializarme en desarrollar la Inteligencia Artificial. Me gusta
+                        liderar proyectos y equipos; soy ordenada de tal manera que todos mis trabajos sean claros,
+                        específicos y entendibles.</p>
+                </div>
+
+                <div class="resume-grid">
+                    <div class="resume-item glass-card">
+                        <h3><i class="las la-graduation-cap"></i> Educación</h3>
+                        <p><strong>Ingeniería en Computación</strong><br>Universidad de Guadalajara (2023 - Actualidad)
+                        </p>
+                        <p><strong>Tecnologías de la Información</strong><br>COBAEJ (2020 - 2023)</p>
+                    </div>
+                    <div class="resume-item glass-card">
+                        <h3><i class="las la-briefcase"></i> Experiencia</h3>
+                        <p><strong>Practicante Dual</strong> - Paradise Village (2021-2022)</p>
+                        <p>Administración de plataforma, automatización con Excel y gestión de personal.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,38 +99,35 @@
         <section id="skills" class="section alt-bg hidden-el">
             <div class="container">
                 <div class="section-header">
-                    <h2>Tech Stack</h2>
-                    <p>Mis herramientas de creación</p>
+                    <h2>Habilidades & Idiomas</h2>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <div class="icon"><i class="lab la-html5"></i> <i class="lab la-css3-alt"></i></div>
-                        <h3>Frontend</h3>
+                        <div class="icon"><i class="las la-language"></i></div>
+                        <h3>Idiomas</h3>
                         <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>React / Vue</li>
-                            <li>Tailwind / Sass</li>
-                            <li>Figma</li>
+                            <li>Español (Nativo)</li>
+                            <li>Inglés (Avanzado B2)</li>
+                            <li>Alemán (Principiante)</li>
                         </ul>
                     </div>
                     <div class="skill-card">
-                        <div class="icon"><i class="lab la-node-js"></i> <i class="lab la-python"></i></div>
-                        <h3>Backend</h3>
+                        <div class="icon"><i class="las la-code"></i></div>
+                        <h3>Tech Stack</h3>
                         <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>SQL / NoSQL</li>
-                            <li>APIs RESTful</li>
+                            <li>HTML, CSS, JS</li>
+                            <li>Python (AI Interest)</li>
+                            <li>Cisco Networking</li>
+                            <li>Office & Automatización</li>
                         </ul>
                     </div>
                     <div class="skill-card">
-                        <div class="icon"><i class="lab la-git-alt"></i> <i class="las la-terminal"></i></div>
-                        <h3>DevOps & Tools</h3>
+                        <div class="icon"><i class="las la-certificate"></i></div>
+                        <h3>Certificados</h3>
                         <ul>
-                            <li>Git & GitHub</li>
-                            <li>Docker</li>
-                            <li>VS Code</li>
-                            <li>Agile</li>
+                            <li>Cisco: Switching & Routing</li>
+                            <li>Cisco: Security & Automation</li>
+                            <li>Google: Asistencia Técnica</li>
                         </ul>
                     </div>
                 </div>
@@ -182,18 +194,19 @@
         <section id="contact" class="section contact-section hidden-el">
             <div class="container">
                 <div class="glass-card contact-card">
-                    <h2>¿Listo para empezar?</h2>
-                    <p>¡Hagamos realidad tu próximo proyecto!</p>
+                    <h2>¡Hablemos!</h2>
+                    <p>¿Lista para colaborar? Envíame un mensaje.</p>
 
-                    <div class="contact-actions">
-                        <a href="mailto:tuemail@ejemplo.com" class="btn btn-primary big-btn"><i
+                    <div class="contact-wrapper">
+                        <a href="mailto:lmcg2910@gmail.com" class="btn btn-primary big-btn"><i
                                 class="las la-envelope"></i> Enviar Correo</a>
-                        <a href="https://wa.me/NUMBER" class="btn btn-whatsapp big-btn"><i class="lab la-whatsapp"></i>
-                            WhatsApp</a>
+                        <a href="https://wa.me/523317908151" class="btn btn-whatsapp big-btn"><i
+                                class="lab la-whatsapp"></i> WhatsApp</a>
                     </div>
 
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="lab la-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/lizeth-crisosto-garcia-8b6a3b2eda" aria-label="LinkedIn"
+                            target="_blank"><i class="lab la-linkedin-in"></i></a>
                         <a href="#" aria-label="GitHub"><i class="lab la-github"></i></a>
                         <a href="#" aria-label="Instagram"><i class="lab la-instagram"></i></a>
                     </div>
@@ -201,10 +214,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>Hecho con <span class="heart">♥</span> por <a href="#">Lizeth Crisosto</a></p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
