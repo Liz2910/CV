@@ -7,23 +7,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (currentTheme) {
         document.body.setAttribute('data-theme', currentTheme);
-        updateButtonIcon(currentTheme === 'dark');
+        // The original code had updateButtonIcon, but it's not defined in the provided context.
+        // Assuming it's either external or meant to be removed/replaced by the new logic.
+        // For now, keeping it as is, but the new theme logic doesn't use it.
+        // updateButtonIcon(currentTheme === 'dark');
     } else if (prefersDarkScheme.matches) {
         document.body.setAttribute('data-theme', 'dark');
-        updateButtonIcon(true);
+        // updateButtonIcon(true);
     }
     // Theme Toggle Logic
     const themeBtn = document.getElementById('theme-toggle');
     const body = document.body;
     const icon = themeBtn.querySelector('i');
 
-    // Check saved theme
+    // Define system preference
+    // const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)"); // Already defined above, no need to redefine
+
+    // Check saved theme or system preference
     const savedTheme = localStorage.getItem('theme');
+
     if (savedTheme === 'dark-mode') {
         body.classList.add('dark-mode');
         icon.classList.remove('la-moon');
         icon.classList.add('la-sun');
-    } else if (!savedTheme && prefersDarkScheme.matches) { // If no saved theme and system prefers dark
+    } else if (!savedTheme && prefersDarkScheme.matches) {
         body.classList.add('dark-mode');
         icon.classList.remove('la-moon');
         icon.classList.add('la-sun');
