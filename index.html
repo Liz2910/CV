@@ -53,15 +53,18 @@
                 <p class="subtitle">Estudiante de Ingeniería en Computación & AI Enthusiast</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Contáctame <i class="las la-paper-plane"></i></a>
-                    <a href="#about" class="btn btn-secondary">Ver Más <i class="las la-arrow-down"></i></a>
+                    <button onclick="window.print()" class="btn btn-secondary">Guardar PDF <i
+                            class="las la-file-pdf"></i></button>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="code-badge">
-                    <pre><code>const lizeth = {
-  age: 18,
-  passion: "AI",
-  skills: ["Leadership", "Order"]
+                    <pre><code>console.log("Hola Mundo!");
+
+const perfil = {
+  nombre: "Lizeth Crisosto",
+  carrera: "Ing. en Computación",
+  pasion: "AI Enthusiast"
 };</code></pre>
                 </div>
                 <div class="circle-decoration"></div>
@@ -75,26 +78,28 @@
                     <p>Sobre mí</p>
                 </div>
                 <div class="about-content glass-card">
-                    <p>Tengo 18 años. Me gustaría especializarme en desarrollar la Inteligencia Artificial. Me gusta
-                        liderar proyectos y equipos; soy ordenada de tal manera que todos mis trabajos sean claros,
-                        específicos y entendibles.</p>
+                    <p>Tengo 20 años. Me especializo en Inteligencia Artificial y actualmente estudio Ingeniería en
+                        Computación. Me apasiona liderar equipos y mantener el orden para lograr proyectos claros y
+                        exitosos.</p>
                 </div>
 
                 <div class="resume-grid">
                     <div class="resume-item glass-card">
                         <h3><i class="las la-graduation-cap"></i> Educación</h3>
-                        <p><strong>Ingeniería en Computación</strong><br>Universidad de Guadalajara (2023 - Actualidad)
+                        <p><strong>Ingeniería en Computación</strong><br>Universidad de Guadalajara | 2023B - Actualidad
                         </p>
-                        <p><strong>Tecnologías de la Información</strong><br>COBAEJ (2020 - 2023)</p>
+                        <p><strong>Tecnologías de la Información</strong><br>COBAEJ | 2020 - 2023</p>
                     </div>
                     <div class="resume-item glass-card">
-                        <h3><i class="las la-briefcase"></i> Experiencia</h3>
+                        <h3><i class="las la-briefcase"></i> Experiencia "No IT"</h3>
                         <p><strong>Practicante Dual</strong> - Paradise Village (2021-2022)</p>
-                        <p>Administración de plataforma, automatización con Excel y gestión de personal.</p>
+                        <p>Administración de plataforma, automatización con Excel y gestión de personal. (Desarrollo de
+                            soft skills: Disciplina y Responsabilidad).</p>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section id="skills" class="section alt-bg hidden-el">
             <div class="container">
@@ -117,8 +122,8 @@
                         <ul>
                             <li>HTML, CSS, JS</li>
                             <li>Python (AI Interest)</li>
-                            <li>Cisco Networking</li>
-                            <li>Office & Automatización</li>
+                            <li>PostgreSQL / MySQL</li>
+                            <li class="small-text">Git, GitHub, VS Code, etc.</li>
                         </ul>
                     </div>
                     <div class="skill-card">
@@ -127,7 +132,7 @@
                         <ul>
                             <li>Cisco: Switching & Routing</li>
                             <li>Cisco: Security & Automation</li>
-                            <li>Google: Asistencia Técnica</li>
+                            <li class="small-text">Google Technical Support, First Responders, etc.</li>
                         </ul>
                     </div>
                 </div>
@@ -138,52 +143,74 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Proyectos</h2>
-                    <p>Cosas increíbles que he construido</p>
+                    <p>Desarrollos en Ingeniería y AI</p>
                 </div>
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <article class="project-card">
                         <div class="project-image">
-                            <!-- Placeholder -->
+                            <!-- Placeholder Image -->
                             <div class="img-overlay"></div>
                         </div>
                         <div class="project-info">
-                            <h3>E-Commerce App</h3>
-                            <p class="tech-tags"><span>React</span> <span>Node.js</span></p>
-                            <p>Plataforma de comercio electrónico con carrito de compras y pasarela de pago.</p>
+                            <h3>Núcleo Diagnóstico Médico</h3>
+                            <p class="tech-tags"><span>PostgreSQL</span> <span>Localhost</span></p>
+                            <p>Sistema integral de gestión médica con perfiles para administradores, médicos y
+                                enfermeras. Base de datos robusta para diagnósticos y pacientes.</p>
                             <div class="project-links">
-                                <a href="#" class="btn-link"><i class="las la-external-link-alt"></i> Demo</a>
-                                <a href="#" class="btn-link"><i class="lab la-github"></i> GitHub</a>
+                                <a href="https://github.com/Liz2910" target="_blank" class="btn-link"><i
+                                        class="lab la-github"></i> Ver en GitHub</a>
                             </div>
                         </div>
                     </article>
+
                     <!-- Project 2 -->
                     <article class="project-card">
                         <div class="project-image">
                             <div class="img-overlay"></div>
                         </div>
                         <div class="project-info">
-                            <h3>Dashboard Analytics</h3>
-                            <p class="tech-tags"><span>Vue</span> <span>Firebase</span></p>
-                            <p>Panel de control administrativo con visualización de datos en tiempo real.</p>
+                            <h3>Tabu Search Algorithm</h3>
+                            <p class="tech-tags"><span>Python</span> <span>AI Fundamentals</span></p>
+                            <p>Implementación del algoritmo de búsqueda tabú y fundamentos de IA (PCO) para optimización
+                                de problemas complejos.</p>
                             <div class="project-links">
-                                <a href="#" class="btn-link"><i class="las la-external-link-alt"></i> Demo</a>
-                                <a href="#" class="btn-link"><i class="lab la-github"></i> GitHub</a>
+                                <a href="https://github.com/Liz2910" target="_blank" class="btn-link"><i
+                                        class="lab la-github"></i> Ver en GitHub</a>
                             </div>
                         </div>
                     </article>
+
                     <!-- Project 3 -->
                     <article class="project-card">
                         <div class="project-image">
                             <div class="img-overlay"></div>
                         </div>
                         <div class="project-info">
-                            <h3>Portfolio V1</h3>
-                            <p class="tech-tags"><span>HTML</span> <span>Sass</span></p>
-                            <p>Mi primer portafolio personal diseñado desde cero.</p>
+                            <h3>Grupo DEGA</h3>
+                            <p class="tech-tags"><span>Web</span> <span>Construcción</span></p>
+                            <p>Sitio web para empresa de construcción. Galería de proyectos, formulario de contacto e
+                                información corporativa.</p>
                             <div class="project-links">
-                                <a href="#" class="btn-link"><i class="las la-external-link-alt"></i> Demo</a>
-                                <a href="#" class="btn-link"><i class="lab la-github"></i> GitHub</a>
+                                <a href="https://github.com/Liz2910" target="_blank" class="btn-link"><i
+                                        class="lab la-github"></i> Ver Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 (Extra) -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Dates App</h3>
+                            <p class="tech-tags"><span>Web</span> <span>Gestión</span></p>
+                            <p>Aplicación web para el agendamiento y administración de citas, permitiendo una
+                                organización eficiente del tiempo.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Liz2910" target="_blank" class="btn-link"><i
+                                        class="lab la-github"></i> Ver en GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -194,10 +221,11 @@
         <section id="contact" class="section contact-section hidden-el">
             <div class="container">
                 <div class="glass-card contact-card">
-                    <h2>¡Hablemos!</h2>
-                    <p>¿Lista para colaborar? Envíame un mensaje.</p>
+                    <h2>¿Listo para empezar?</h2>
+                    <p>¡Hagamos realidad tu próximo proyecto!</p>
 
                     <div class="contact-wrapper">
+                        <!-- Placeholders left as requested -->
                         <a href="mailto:lmcg2910@gmail.com" class="btn btn-primary big-btn"><i
                                 class="las la-envelope"></i> Enviar Correo</a>
                         <a href="https://wa.me/523317908151" class="btn btn-whatsapp big-btn"><i
@@ -207,12 +235,14 @@
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/lizeth-crisosto-garcia-8b6a3b2eda" aria-label="LinkedIn"
                             target="_blank"><i class="lab la-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="lab la-github"></i></a>
+                        <a href="https://github.com/Liz2910" aria-label="GitHub" target="_blank"><i
+                                class="lab la-github"></i></a>
                         <a href="#" aria-label="Instagram"><i class="lab la-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <script src="script.js"></script>
