@@ -12,33 +12,46 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.setAttribute('data-theme', 'dark');
         updateButtonIcon(true);
     }
+    // Theme Toggle Logic
+    const themeBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeBtn.querySelector('i');
 
-    // Toggle theme
-    toggleBtn.addEventListener('click', (e) => {
-        let theme = document.body.getAttribute('data-theme');
-        let newTheme = theme === 'dark' ? 'light' : 'dark';
+    // Check saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark-mode') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('la-moon');
+        icon.classList.add('la-sun');
+    } else if (!savedTheme && prefersDarkScheme.matches) { // If no saved theme and system prefers dark
+        body.classList.add('dark-mode');
+        icon.classList.remove('la-moon');
+        icon.classList.add('la-sun');
+        localStorage.setItem('theme', 'dark-mode');
+    }
 
-        document.body.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateButtonIcon(newTheme === 'dark');
 
-        // Add ripple effect class
-        toggleBtn.classList.add('active');
-        setTimeout(() => toggleBtn.classList.remove('active'), 500);
-    });
+    themeBtn.addEventListener('click', () => {
+        // Ripple Effect Trigger
+        themeBtn.classList.remove('ripple-active'); // Reset
+        void themeBtn.offsetWidth; // Trigger Reflow
+        themeBtn.classList.add('ripple-active');
 
-    function updateButtonIcon(isDark) {
-        const icon = toggleBtn.querySelector('i');
-        if (isDark) {
+        body.classList.toggle('dark-mode');
+
+        // Icon Switch with Wave
+        if (body.classList.contains('dark-mode')) {
             icon.classList.remove('la-moon');
             icon.classList.add('la-sun');
-            toggleBtn.setAttribute('aria-label', 'Cambiar a modo claro');
+            localStorage.setItem('theme', 'dark-mode');
+            themeBtn.setAttribute('aria-label', 'Cambiar a modo claro');
         } else {
             icon.classList.remove('la-sun');
             icon.classList.add('la-moon');
-            toggleBtn.setAttribute('aria-label', 'Cambiar a modo oscuro');
+            localStorage.setItem('theme', 'light-mode');
+            themeBtn.setAttribute('aria-label', 'Cambiar a modo oscuro');
         }
-    }
+    });
 
     // Scroll Observer for Animations
     const observerOptions = {
