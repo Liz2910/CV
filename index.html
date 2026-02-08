@@ -26,7 +26,9 @@
     <meta property="og:title" content="Lizeth Crisosto - Ingeniera en Computación">
     <meta property="og:description" content="Portafolio profesional - Proyectos de desarrollo web, bases de datos e IA">
     <meta property="og:type" content="website">
-    <meta name="author" content="Lizeth Margarita Crisosto García">
+    <meta property="og:image" content="perfil.png">
+    <meta property="og:image:alt" content="Lizeth Crisosto - Ingeniera en Computación">
+    <meta name="author" content="Lizeth Crisosto">
 </head>
 
 <body>
@@ -51,10 +53,15 @@
     <main>
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
             <div class="hero-content">
-                <span class="greeting">✦ Hola, soy</span>
+                <span class="greeting">Hola, soy</span>
                 <h1>Lizeth Margarita<br><span class="name-accent">Crisosto García</span></h1>
-                <p class="subtitle">Estudiante de Ingeniería en Computación</p>
+                <p class="subtitle">Estudiante de Ingeniería en Computación · UDG</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Contáctame <i class="las la-paper-plane"></i></a>
                     <button id="pdf-btn" class="btn btn-outline">Descargar PDF <i class="las la-file-pdf"></i></button>
@@ -62,17 +69,21 @@
             </div>
             <div class="hero-visual">
                 <div class="code-badge">
-                    <div class="code-dots">
-                        <span></span><span></span><span></span>
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="code-filename">portfolio.js</span>
                     </div>
-                    <pre><code><span class="code-keyword">const</span> lizeth = {
-  <span class="code-key">role</span>: <span class="code-string">"Estudiante de Ing."</span>,
-  <span class="code-key">focus</span>: <span class="code-string">"Development"</span>,
-  <span class="code-key">passion</span>: <span class="code-string">"Innovación Tech"</span>,
-  <span class="code-key">motto</span>: <span class="code-string">"Aprendizaje continuo"</span>
-};</code></pre>
+                    <pre><code><span class="code-line-num">1</span>  <span class="code-keyword">const</span> <span class="code-var">lizeth</span> = {
+<span class="code-line-num">2</span>    <span class="code-key">universidad</span>: <span class="code-string">"UDG"</span>,
+<span class="code-line-num">3</span>    <span class="code-key">semestre</span>: <span class="code-number">6</span>,
+<span class="code-line-num">4</span>    <span class="code-key">skills</span>: [<span class="code-string">"Web"</span>, <span class="code-string">"DB"</span>, <span class="code-string">"Networks"</span>],
+<span class="code-line-num">5</span>    <span class="code-key">available</span>: <span class="code-bool">true</span>
+<span class="code-line-num">6</span>  };
+<span class="code-line-num">7</span>
+<span class="code-line-num">8</span>  lizeth.<span class="code-method">build</span>(<span class="code-string">"future"</span>);<span class="cursor-blink">|</span></code></pre>
                 </div>
-                <div class="circle-decoration"></div>
             </div>
         </section>
 
@@ -80,7 +91,6 @@
         <section id="about" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">✦ Conóceme</span>
                     <h2>Perfil Profesional</h2>
                 </div>
 
@@ -100,26 +110,25 @@
                                 <p class="period">2023 — Actualidad</p>
                                 <p class="location"><i class="las la-map-marker-alt"></i> Guadalajara, México</p>
                             </div>
-                            <div class="timeline-item">
-                                <h4>Tecnologías de la Información y la Comunicación</h4>
-                                <p class="institution">COBAEJ</p>
-                                <p class="period">2020 — 2023</p>
-                                <p class="location"><i class="las la-map-marker-alt"></i> Guadalajara, México</p>
-                            </div>
+
                         </div>
                     </div>
 
                     <div class="info-card glass-card">
                         <h3><i class="las la-certificate"></i> Certificaciones</h3>
                         <ul class="cert-list">
-                            <li><i class="las la-check-circle"></i> Switching, Routing and Wireless Essentials — Cisco
-                                Networking Academy</li>
-                            <li><i class="las la-check-circle"></i> Redes Empresariales, Seguridad y Automatización —
-                                Cisco Networking Academy</li>
-                            <li><i class="las la-check-circle"></i> Primer Respondiente en Primeros Auxilios de
-                                Protección Civil</li>
-                            <li><i class="las la-check-circle"></i> Aspectos Básicos de la Asistencia Técnica — Google
-                                Coursera</li>
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png" alt="Cisco" class="cert-logo">
+                                <span>Switching, Routing and Wireless Essentials — Cisco Networking Academy</span>
+                            </li>
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png" alt="Cisco" class="cert-logo">
+                                <span>Redes Empresariales, Seguridad y Automatización — Cisco Networking Academy</span>
+                            </li>
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google" class="cert-logo">
+                                <span>Aspectos Básicos de la Asistencia Técnica — Google Coursera</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -130,7 +139,6 @@
         <section id="experience" class="section alt-bg">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">✦ Mi camino</span>
                     <h2>Experiencia Profesional</h2>
                 </div>
 
@@ -156,7 +164,6 @@
         <section id="skills" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">✦ Lo que sé hacer</span>
                     <h2>Habilidades</h2>
                 </div>
 
@@ -191,7 +198,6 @@
         <section id="projects" class="section alt-bg">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">✦ Mi trabajo</span>
                     <h2>Proyectos Destacados</h2>
                 </div>
 
@@ -258,7 +264,6 @@
                         <div class="contact-circle"></div>
                         <div class="contact-circle c2"></div>
                     </div>
-                    <span class="section-tag">✦ Conectemos</span>
                     <h2>¿Trabajamos juntos?</h2>
                     <p class="contact-subtitle">Estoy disponible para colaboraciones y nuevos proyectos</p>
 
