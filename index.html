@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <!-- Icons (Line Awesome) -->
@@ -22,8 +22,8 @@
 
     <!-- SEO & Open Graph -->
     <meta name="description"
-        content="Lizeth Crisosto - Estudiante de Ingeniería en Computación enfocada en Inteligencia Artificial. Portafolio profesional con proyectos de desarrollo web y tecnología.">
-    <meta property="og:title" content="Lizeth Crisosto - Ingeniera en Computación & AI Enthusiast">
+        content="Lizeth Crisosto - Estudiante de Ingeniería en Computación. Portafolio profesional con proyectos de desarrollo web y tecnología.">
+    <meta property="og:title" content="Lizeth Crisosto - Ingeniera en Computación">
     <meta property="og:description" content="Portafolio profesional - Proyectos de desarrollo web, bases de datos e IA">
     <meta property="og:type" content="website">
     <meta name="author" content="Lizeth Margarita Crisosto García">
@@ -32,57 +32,62 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">&lt;LC.dev /&gt;</div>
+            <div class="logo">&lt;Dev.Girl /&gt;</div>
             <ul class="nav-links">
                 <li><a href="#about">Perfil</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact" class="btn-nav">Contacto</a></li>
-                <li><button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema"><i
-                            class="las la-moon"></i></button></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                        <i class="las la-moon"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section hidden-el">
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="hero-section">
             <div class="hero-content">
-                <span class="greeting">Hola, soy</span>
-                <h1>Lizeth Margarita<br>Crisosto García</h1>
+                <span class="greeting">✦ Hola, soy</span>
+                <h1>Lizeth Margarita<br><span class="name-accent">Crisosto García</span></h1>
                 <p class="subtitle">Estudiante de Ingeniería en Computación</p>
-                <p class="subtitle-secondary">Especialización en Inteligencia Artificial</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Contáctame <i class="las la-paper-plane"></i></a>
-                    <button onclick="window.print()" class="btn btn-secondary">Descargar PDF <i
-                            class="las la-file-pdf"></i></button>
+                    <button id="pdf-btn" class="btn btn-outline">Descargar PDF <i class="las la-file-pdf"></i></button>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="code-badge">
-                    <pre><code>const lizeth = {
-  role: "Estudiante de Ing.",
-  focus: "AI & Development",
-  passion: "Innovación Tech",
-  motto: "Aprendizaje continuo"
+                    <div class="code-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <pre><code><span class="code-keyword">const</span> lizeth = {
+  <span class="code-key">role</span>: <span class="code-string">"Estudiante de Ing."</span>,
+  <span class="code-key">focus</span>: <span class="code-string">"Development"</span>,
+  <span class="code-key">passion</span>: <span class="code-string">"Innovación Tech"</span>,
+  <span class="code-key">motto</span>: <span class="code-string">"Aprendizaje continuo"</span>
 };</code></pre>
                 </div>
                 <div class="circle-decoration"></div>
             </div>
         </section>
 
-        <!-- About/Perfil Section -->
-        <section id="about" class="section hidden-el">
+        <!-- ======= Perfil Section ======= -->
+        <section id="about" class="section">
             <div class="container">
                 <div class="section-header">
+                    <span class="section-tag">✦ Conóceme</span>
                     <h2>Perfil Profesional</h2>
-                    <p>Sobre mí</p>
                 </div>
+
                 <div class="about-content glass-card">
                     <p>Tengo 20 años. Me gustaría especializarme en desarrollar la Inteligencia Artificial, me gusta
-                        liderar proyectos y equipos, soy ordenada de tal manera que todos mis trabajos sean claros y
-                        exitosos.</p>
+                        liderar proyectos y equipos, soy ordenada de tal manera que todos mis trabajos sean claros,
+                        específicos y entendibles.</p>
                 </div>
 
                 <div class="info-grid">
@@ -90,16 +95,16 @@
                         <h3><i class="las la-graduation-cap"></i> Educación</h3>
                         <div class="timeline">
                             <div class="timeline-item">
-                                <h4>Ingeniería en Computación</h4>
+                                <h4>Ingeniería en Computación — Sexto Semestre</h4>
                                 <p class="institution">Universidad de Guadalajara</p>
-                                <p class="period">2023 - Actualidad</p>
-                                <p class="location">Guadalajara, México</p>
+                                <p class="period">2023 — Actualidad</p>
+                                <p class="location"><i class="las la-map-marker-alt"></i> Guadalajara, México</p>
                             </div>
                             <div class="timeline-item">
                                 <h4>Tecnologías de la Información y la Comunicación</h4>
-                                <p class="institution">CONALEC</p>
-                                <p class="period">2020 - 2023</p>
-                                <p class="location">Guadalajara, México</p>
+                                <p class="institution">COBAEJ</p>
+                                <p class="period">2020 — 2023</p>
+                                <p class="location"><i class="las la-map-marker-alt"></i> Guadalajara, México</p>
                             </div>
                         </div>
                     </div>
@@ -107,13 +112,13 @@
                     <div class="info-card glass-card">
                         <h3><i class="las la-certificate"></i> Certificaciones</h3>
                         <ul class="cert-list">
-                            <li><i class="las la-check-circle"></i> Switching, Routing and Wireless Essentials - Cisco
+                            <li><i class="las la-check-circle"></i> Switching, Routing and Wireless Essentials — Cisco
                                 Networking Academy</li>
-                            <li><i class="las la-check-circle"></i> Redes Empresariales, Seguridad y Automatización -
+                            <li><i class="las la-check-circle"></i> Redes Empresariales, Seguridad y Automatización —
                                 Cisco Networking Academy</li>
                             <li><i class="las la-check-circle"></i> Primer Respondiente en Primeros Auxilios de
                                 Protección Civil</li>
-                            <li><i class="las la-check-circle"></i> Aspectos Básicos de la Asistencia Técnica - Google
+                            <li><i class="las la-check-circle"></i> Aspectos Básicos de la Asistencia Técnica — Google
                                 Coursera</li>
                         </ul>
                     </div>
@@ -121,12 +126,12 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section alt-bg hidden-el">
+        <!-- ======= Experience Section ======= -->
+        <section id="experience" class="section alt-bg">
             <div class="container">
                 <div class="section-header">
+                    <span class="section-tag">✦ Mi camino</span>
                     <h2>Experiencia Profesional</h2>
-                    <p>Trayectoria laboral</p>
                 </div>
 
                 <div class="experience-timeline">
@@ -134,44 +139,44 @@
                         <div class="exp-header">
                             <div>
                                 <h3>Practicante Dual</h3>
-                                <p class="company">Paradise Village</p>
+                                <p class="company"><i class="las la-building"></i> Paradise Village</p>
                             </div>
-                            <span class="period">2021 - 2022</span>
+                            <span class="exp-badge">2021 — 2022</span>
                         </div>
                         <p class="exp-description">Administración de plataforma de información de empleados,
                             automatizaba la asistencia de los colaboradores. Pasaba a un Excel todas las personas que
                             cumplían años para la facilitación de recompensas de la empresa. Conocí el ambiente laboral
-                            empresarial, aprendí de la responsabilidad.</p>
+                            empresarial, aprendí disciplina, responsabilidad y orden en mi trabajo.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section hidden-el">
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="section">
             <div class="container">
                 <div class="section-header">
+                    <span class="section-tag">✦ Lo que sé hacer</span>
                     <h2>Habilidades</h2>
-                    <p>Stack tecnológico & competencias</p>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="icon"><i class="las la-language"></i></div>
-                        <h3>Idiomas</h3>
-                        <ul>
-                            <li><strong>Español:</strong> Nativo</li>
-                            <li><strong>Inglés:</strong> Avanzado</li>
-                        </ul>
+
+                <div class="skills-compact">
+                    <!-- Idiomas badge -->
+                    <div class="lang-bar">
+                        <span class="lang-item"><i class="las la-globe-americas"></i> <strong>Español:</strong>
+                            Nativo</span>
+                        <span class="lang-divider">|</span>
+                        <span class="lang-item"><i class="las la-globe"></i> <strong>Inglés:</strong> Avanzado —
+                            Conversacional y Profesional, Nivel B2</span>
                     </div>
-                    <div class="skill-card">
-                        <div class="icon"><i class="las la-user-tie"></i></div>
-                        <h3>Soft Skills</h3>
+
+                    <div class="skills-list glass-card">
                         <ul>
-                            <li>Inglés Conversacional Profesional - Nivel B2</li>
                             <li>Microsoft Office (Word, Excel, PowerPoint)</li>
                             <li>Orden en el Trabajo</li>
                             <li>Trabajo Bajo Presión</li>
-                            <li>Liderazgo con Empatía</li>
+                            <li>Interés por desarrollar experiencia de mi carrera y relacionados</li>
+                            <li>Compromiso con mi Empresa</li>
                             <li>Administración de Tiempos y Proyectos</li>
                             <li>Responsabilidad</li>
                             <li>Interés por aprender más</li>
@@ -182,92 +187,61 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section alt-bg hidden-el">
+        <!-- ======= Projects Section ======= -->
+        <section id="projects" class="section alt-bg">
             <div class="container">
                 <div class="section-header">
+                    <span class="section-tag">✦ Mi trabajo</span>
                     <h2>Proyectos Destacados</h2>
-                    <p>Desarrollos profesionales</p>
                 </div>
+
                 <div class="projects-grid">
                     <!-- Project 1: Bombcreto -->
                     <article class="project-card">
-                        <div class="project-image"
-                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <div class="img-overlay">
-                                <i class="las la-industry"></i>
-                            </div>
+                        <div class="project-image gradient-1">
+                            <i class="las la-industry"></i>
                         </div>
                         <div class="project-info">
                             <h3>Bombcreto</h3>
-                            <p class="tech-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </p>
                             <p>Sitio web corporativo para empresa de bombeo de concreto. Diseño profesional con galería
                                 de servicios, información de contacto y formulario de cotización.</p>
-                            <div class="project-links">
-                                <a href="https://bombcreto.com" target="_blank" class="btn-link">
-                                    <i class="las la-external-link-alt"></i> Ver Sitio Web
-                                </a>
-                            </div>
+                            <a href="https://bombcreto.com" target="_blank" class="project-btn">
+                                <i class="las la-external-link-alt"></i> Visitar Sitio Web
+                            </a>
                         </div>
                     </article>
 
-                    <!-- Project 2: Concretos Dega -->
+                    <!-- Project 2: Grupo DEGA -->
                     <article class="project-card">
-                        <div class="project-image"
-                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <div class="img-overlay">
-                                <i class="las la-building"></i>
-                            </div>
+                        <div class="project-image gradient-2">
+                            <i class="las la-building"></i>
                         </div>
                         <div class="project-info">
                             <h3>Grupo DEGA</h3>
-                            <p class="tech-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </p>
                             <p>Plataforma web para constructora con portafolio de proyectos. Incluye galería
                                 interactiva, sección de servicios y sistema de contacto directo.</p>
-                            <div class="project-links">
-                                <a href="https://grupodega.com" target="_blank" class="btn-link">
-                                    <i class="las la-external-link-alt"></i> Ver Sitio Web
-                                </a>
-                            </div>
+                            <a href="https://grupodega.com" target="_blank" class="project-btn">
+                                <i class="las la-external-link-alt"></i> Visitar Sitio Web
+                            </a>
                         </div>
                     </article>
 
                     <!-- Project 3: Núcleo Diagnóstico -->
                     <article class="project-card">
-                        <div class="project-image"
-                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <div class="img-overlay">
-                                <i class="las la-hospital"></i>
-                            </div>
+                        <div class="project-image gradient-3">
+                            <i class="las la-hospital"></i>
                         </div>
                         <div class="project-info">
                             <h3>Núcleo Diagnóstico Médico</h3>
-                            <p class="tech-tags">
-                                <span>MySQL</span>
-                                <span>PHP</span>
-                                <span>JavaScript</span>
-                                <span>HTML/CSS</span>
-                            </p>
                             <p>Sistema integral de gestión médica. Base de datos robusta para administración de
                                 pacientes, citas médicas, diagnósticos y resultados de laboratorio.</p>
-                            <div class="project-links">
-                                <a href="https://nucleodiagnostico.com" target="_blank" class="btn-link">
-                                    <i class="las la-external-link-alt"></i> Ver Sitio Web
-                                </a>
-                            </div>
+                            <a href="https://nucleodiagnostico.com" target="_blank" class="project-btn">
+                                <i class="las la-external-link-alt"></i> Visitar Sitio Web
+                            </a>
                         </div>
                     </article>
                 </div>
 
-                <!-- Ver más en GitHub -->
                 <div class="github-cta">
                     <a href="https://github.com/lmcg2910" target="_blank" class="btn btn-github">
                         <i class="lab la-github"></i> Ver más proyectos en GitHub
@@ -276,41 +250,47 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section hidden-el">
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="section">
             <div class="container">
-                <div class="glass-card contact-card">
-                    <h2>¿Trabajamos juntos?</h2>
-                    <p>Estoy disponible para colaboraciones y nuevos proyectos</p>
-
-                    <div class="contact-wrapper">
-                        <a href="mailto:lmcg2910@gmail.com" class="btn btn-primary big-btn">
-                            <i class="las la-envelope"></i> Enviar Correo
-                        </a>
+                <div class="contact-card glass-card">
+                    <div class="contact-decoration">
+                        <div class="contact-circle"></div>
+                        <div class="contact-circle c2"></div>
                     </div>
+                    <span class="section-tag">✦ Conectemos</span>
+                    <h2>¿Trabajamos juntos?</h2>
+                    <p class="contact-subtitle">Estoy disponible para colaboraciones y nuevos proyectos</p>
+
+                    <a href="mailto:lmcg2910@gmail.com" class="btn btn-primary big-btn">
+                        <i class="las la-envelope"></i> Enviar Correo
+                    </a>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/lizeth-crisosto-garcia" aria-label="LinkedIn"
-                            target="_blank">
+                        <a href="https://www.linkedin.com/in/lizeth-crisosto" aria-label="LinkedIn" target="_blank"
+                            class="social-btn linkedin">
                             <i class="lab la-linkedin-in"></i>
+                            <span>LinkedIn</span>
                         </a>
-                        <a href="https://github.com/lmcg2910" aria-label="GitHub" target="_blank">
+                        <a href="https://github.com/lmcg2910" aria-label="GitHub" target="_blank"
+                            class="social-btn github">
                             <i class="lab la-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/lizcrisosto" aria-label="Instagram" target="_blank"
+                            class="social-btn instagram">
+                            <i class="lab la-instagram"></i>
+                            <span>Instagram</span>
                         </a>
                     </div>
 
-                    <div class="contact-info">
-                        <p><i class="las la-map-marker"></i> Guadalajara, México</p>
+                    <div class="contact-location">
+                        <i class="las la-map-marker-alt"></i> Guadalajara, México
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
-
-    <footer>
-        <p>Diseñado y desarrollado con <span class="heart">❤</span> por Lizeth Crisosto © 2026</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
