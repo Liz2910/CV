@@ -4,9 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================
     const themeBtn = document.getElementById('theme-toggle');
     const icon = themeBtn.querySelector('i');
-    const root = document.documentElement; // <html> element
+    const root = document.documentElement;
 
-    // Initialize: Saved → System → Light
     const saved = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -17,11 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     themeBtn.addEventListener('click', () => {
-        if (root.getAttribute('data-theme') === 'dark') {
-            setLight();
-        } else {
-            setDark();
-        }
+        root.getAttribute('data-theme') === 'dark' ? setLight() : setDark();
     });
 
     function setDark() {
@@ -39,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================
-    // 2. SCROLL REVEAL ANIMATIONS
+    // 2. SCROLL REVEAL (IntersectionObserver)
     // ============================================
     const revealObserver = new IntersectionObserver(
         (entries) => {
@@ -71,30 +66,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ============================================
-    // 4. NAVBAR SHRINK ON SCROLL
+    // 4. OPTIMIZED SCROLL HANDLER (rAF throttle)
     // ============================================
     const navbar = document.querySelector('.navbar');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    let ticking = false;
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 80) {
+    function handleScroll() {
+        const scrollY = window.scrollY;
+
+        // Navbar shrink
+        if (scrollY > 80) {
             navbar.style.padding = '0.7rem 6%';
             navbar.style.boxShadow = 'var(--shadow-sm)';
         } else {
             navbar.style.padding = '1rem 6%';
             navbar.style.boxShadow = 'none';
         }
-    });
 
-    // ============================================
-    // 5. ACTIVE NAV LINK ON SCROLL
-    // ============================================
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-
-    window.addEventListener('scroll', () => {
+        // Active nav link
         let current = '';
         sections.forEach(section => {
-            if (window.scrollY >= section.offsetTop - 200) {
+            if (scrollY >= section.offsetTop - 200) {
                 current = section.getAttribute('id');
             }
         });
@@ -104,10 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.classList.add('active');
             }
         });
-    });
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(handleScroll);
+            ticking = true;
+        }
+    }, { passive: true });
 
     // ============================================
-    // 6. PDF DOWNLOAD
+    // 5. PDF DOWNLOAD
     // ============================================
     const pdfBtn = document.getElementById('pdf-btn');
     if (pdfBtn) {
