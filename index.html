@@ -71,17 +71,18 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="profile-photo-wrapper">
-                    <img src="perfil.png" alt="Lizeth Crisosto García" class="profile-photo">
-                </div>
-                <div class="code-badge">
-                    <div class="code-header">
-                        <div class="code-dots">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <span class="code-filename">portfolio.js</span>
+                <div class="hero-visual-row">
+                    <div class="profile-photo-wrapper">
+                        <img src="perfil.png" alt="Lizeth Crisosto García" class="profile-photo">
                     </div>
-                    <pre><code><span class="code-line-num"> 1</span>  <span class="code-keyword">class</span> <span class="code-var">Developer</span> {
+                    <div class="code-badge">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-filename">portfolio.js</span>
+                        </div>
+                        <pre><code><span class="code-line-num"> 1</span>  <span class="code-keyword">class</span> <span class="code-var">Developer</span> {
 <span class="code-line-num"> 2</span>    <span class="code-method">constructor</span>() {
 <span class="code-line-num"> 3</span>      <span class="code-keyword">this</span>.<span class="code-key">name</span> = <span class="code-string">"Lizeth Crisosto"</span>;
 <span class="code-line-num"> 4</span>      <span class="code-keyword">this</span>.<span class="code-key">role</span> = <span class="code-string">"Ing. Computación"</span>;
@@ -96,6 +97,7 @@
 <span class="code-line-num">13</span>
 <span class="code-line-num">14</span>  <span class="code-keyword">const</span> <span class="code-var">liz</span> = <span class="code-keyword">new</span> <span class="code-var">Developer</span>();
 <span class="code-line-num">15</span>  <span class="code-var">liz</span>.<span class="code-method">build</span>(<span class="code-string">"the future"</span>);<span class="cursor-blink">|</span></code></pre>
+                    </div>
                 </div>
             </div>
         </section>
@@ -121,6 +123,12 @@
                                 <h4>Ingeniería en Computación — Sexto Semestre</h4>
                                 <p class="institution">Universidad de Guadalajara</p>
                                 <p class="period">2023 — Actualidad</p>
+                                <p class="location"><i class="las la-map-marker-alt"></i> Guadalajara, México</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>Técnico en Informática</h4>
+                                <p class="institution">COBA</p>
+                                <p class="period">2020 — 2023</p>
                                 <p class="location"><i class="las la-map-marker-alt"></i> Guadalajara, México</p>
                             </div>
                         </div>
@@ -192,6 +200,7 @@
                             Conversacional y Profesional, Nivel B2</span>
                     </div>
 
+                    <p class="skills-label"><i class="las la-laptop-code"></i> Hard Skills</p>
                     <div class="skills-categories">
                         <div class="skill-category glass-card">
                             <div class="skill-category-header">
@@ -203,7 +212,6 @@
                                 <li>JavaScript</li>
                                 <li>Python</li>
                                 <li>SQL & Bases de Datos</li>
-                                <li>Git & GitHub</li>
                                 <li>C / C++</li>
                             </ul>
                         </div>
@@ -222,11 +230,14 @@
                                 <li>Soporte Técnico</li>
                             </ul>
                         </div>
+                    </div>
 
+                    <p class="skills-label"><i class="las la-heart"></i> Soft Skills</p>
+                    <div class="skills-categories skills-soft">
                         <div class="skill-category glass-card">
                             <div class="skill-category-header">
-                                <i class="las la-tools"></i>
-                                <h4>Herramientas & Competencias</h4>
+                                <i class="las la-users"></i>
+                                <h4>Soft Skills</h4>
                             </div>
                             <ul>
                                 <li>Microsoft Office</li>
@@ -252,8 +263,8 @@
                 <div class="projects-grid">
                     <!-- Project 1: Bombcreto -->
                     <article class="project-card">
-                        <div class="project-image gradient-1">
-                            <i class="las la-industry"></i>
+                        <div class="project-image">
+                            <img src="preview-bombcreto.png" alt="Preview Bombcreto" class="project-preview">
                         </div>
                         <div class="project-info">
                             <h3>Bombcreto</h3>
@@ -267,8 +278,8 @@
 
                     <!-- Project 2: Concretos DEGA -->
                     <article class="project-card">
-                        <div class="project-image gradient-2">
-                            <i class="las la-building"></i>
+                        <div class="project-image">
+                            <img src="preview-dega.png" alt="Preview Concretos DEGA" class="project-preview">
                         </div>
                         <div class="project-info">
                             <h3>Concretos DEGA</h3>
@@ -282,8 +293,8 @@
 
                     <!-- Project 3: Núcleo Diagnóstico -->
                     <article class="project-card">
-                        <div class="project-image gradient-3">
-                            <i class="las la-hospital"></i>
+                        <div class="project-image">
+                            <img src="preview-nucleo.png" alt="Preview Núcleo Diagnóstico" class="project-preview">
                         </div>
                         <div class="project-info">
                             <h3>Núcleo Diagnóstico Médico</h3>
@@ -347,10 +358,8 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <span class="footer-logo">&lt;Dev.Girl /&gt;</span>
-                <p class="footer-tagline">Construyendo el futuro, una línea de código a la vez.</p>
-            </div>
+            <span class="footer-logo">&lt;Dev.Girl /&gt;</span>
+            <span class="footer-divider-inline"></span>
             <div class="footer-social">
                 <a href="https://github.com/Liz2910" target="_blank" aria-label="GitHub"><i
                         class="lab la-github"></i></a>
@@ -360,8 +369,8 @@
                         class="lab la-instagram"></i></a>
                 <a href="mailto:lmcg2910@gmail.com" aria-label="Email"><i class="las la-envelope"></i></a>
             </div>
-            <div class="footer-divider"></div>
-            <p class="footer-copy">&copy; 2026 Lizeth Crisosto García &middot; Guadalajara, México</p>
+            <span class="footer-divider-inline"></span>
+            <p class="footer-copy">&copy; 2026 Lizeth Crisosto &middot; Guadalajara, MX</p>
         </div>
     </footer>
 
